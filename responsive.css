@@ -314,6 +314,7 @@
 .arrow_right {
     display: flex;
     justify-content: flex-end;
+    cursor: pointer;
 }
 
 .h2_help {

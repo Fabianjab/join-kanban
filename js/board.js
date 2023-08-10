@@ -446,76 +446,6 @@ function closeTask() {
     document.getElementById('container').innerHTML = oldContent;
 }
 
-// <div class="progress_tasks"></div>
-// <span class="tasks_board">0/3 Done</span>
-
-// <img src="img/red_arrows.svg" class="arrows_board">
-
-
-// {/* <div class="board_users">${element['users']}
-//                 </div>
-//                 <div id="second_user" class="board_users">${element['users']}
-//                 </div>
-//                 <div id="third_user" class="board_users">${element['users']}
-//                 </div> */}
-
-
-
-// function updateHTML() {
-//     let first = todos.filter(t => t['category'] == 'window1');
-
-//     document.getElementById('window1').innerHTML = ``;
-
-//     for (let index = 0; index < first.length; index++) {
-//         const element = first[index];
-//         document.getElementById('window1').innerHTML += generateToDoHTML(element);
-
-//     }
-
-//     let second = todos.filter(t => t['category'] == 'window2');
-
-//     document.getElementById('window2').innerHTML = '';
-
-//     for (let index = 0; index < second.length; index++) {
-//         const element = second[index];
-//         document.getElementById('window2').innerHTML += generateToDoHTML(element);
-
-//     }
-
-//     let third = todos.filter(t => t['category'] == 'window3');
-
-//     document.getElementById('window3').innerHTML = '';
-
-//     for (let index = 0; index < third.length; index++) {
-//         const element = third[index];
-//         document.getElementById('window3').innerHTML += generateToDoHTML(element);
-
-//     }
-
-//     let forth = todos.filter(t => t['category'] == 'window4');
-
-//     document.getElementById('window4').innerHTML = '';
-
-//     for (let index = 0; index < forth.length; index++) {
-//         const element = forth[index];
-//         document.getElementById('window4').innerHTML += generateToDoHTML(element);
-
-//     }
-// }
-
-// function generateToDoHTML(element) {
-//     return `
-//     <div id="moveable_container" draggable="true" ondragstart="startDragging(${element['id']})" class="todo">
-//         <div class="topic">${element['topic']}
-//         </div>
-//         <div class="title">${element['title']}
-//         </div>
-//         <div class="description">${element['description']}
-//         </div>
-//         <div class="board_users">${element['users']}
-//         </div>
-//     </div>`;
-// }
 
 function startDragging(id) {
     currentDraggedElement = id;
@@ -532,7 +462,6 @@ async function moveTo(buck) {
     updateHTML();
 }
 
-// Suchfunktion auf der Board Seite
 function search_container() {
     let input = document.getElementById('find_task').value;
     input = input.toLowerCase();

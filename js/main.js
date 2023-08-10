@@ -4,7 +4,6 @@ async function init() {
     console.log(users);
 }
 
-
 async function setItem(key, value) {
     const payload = { key, value, token: STORAGE_TOKEN };
     return fetch(STORAGE_URL, { method: 'POST', body: JSON.stringify(payload)})
@@ -15,10 +14,14 @@ async function getItem(key) {
     const url = `${STORAGE_URL}?key=${key}&token=${STORAGE_TOKEN}`;
     let result = await fetch(url).then(res => res.json());
     let resultReturn = result['data']['value'];
-    resultReturn = resultReturn.replaceAll("'", '"');
-    resultReturn = resultReturn.replaceAll('True', 'true');
-    resultReturn = resultReturn.replaceAll('False', 'false');
-    resultReturn = JSON.parse(resultReturn);
+
+    try {
+        resultReturn = JSON.parse(resultReturn);
+    } catch (error) {
+        console.error('Error parsing JSON:', error);
+        return null;
+    }
+
     return resultReturn;
 }
 

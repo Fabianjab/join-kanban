@@ -125,7 +125,7 @@ let users =
     ];
 
 
-    let usersOld =
+let usersOld =
     [{
         'id': 0,
         'name': 'Anton Mayer',
@@ -198,11 +198,8 @@ let users =
         'password': '',
         'color_id': 'rgb(203,27,207)',
     }
-    
+
     ];
-
-
-
 
 let todos = [
     {
@@ -213,8 +210,8 @@ let todos = [
         'category_id': 2,
         'user_ids': [0, 1, 2],
         'due_date': 123134346,
-        'prio' : 0,
-        'subtasks' : [
+        'prio': 0,
+        'subtasks': [
             {
                 'id': 0,
                 'title': 'Lorem ipsum dolor',
@@ -235,8 +232,8 @@ let todos = [
         'category_id': 2,
         'user_ids': [0, 1, 2],
         'due_date': "01-01-2024",
-        'prio' : 0,
-        'subtasks' : [
+        'prio': 0,
+        'subtasks': [
             {
                 'id': 0,
                 'title': 'Lorem ipsum dolor',
@@ -257,8 +254,8 @@ let todos = [
         'category_id': 2,
         'user_ids': [0, 1, 2],
         'due_date': "01-01-2024",
-        'prio' : 0,
-        'subtasks' : [
+        'prio': 0,
+        'subtasks': [
             {
                 'id': 0,
                 'title': 'Lorem ipsum dolor',
@@ -275,126 +272,84 @@ let todos = [
 
 let oldTodos = [
     {
-       "id":0,
-       "bucket":"window1",
-       "title":"Beispiel Task",
-       "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
-       "category_id":2,
-       "user_ids":[
-          0,
-          1,
-          2
-       ],
-       "due_date":"01-01-2024",
-       "prio":0,
-       "subtasks":[
-          {
-             "id":0,
-             "title":"Lorem ipsum dolor",
-             "checked":true
-          },
-          {
-             "id":1,
-             "title":"sit amet consectetur",
-             "checked":false
-          }
-       ]
+        "id": 0,
+        "bucket": "window1",
+        "title": "Beispiel Task",
+        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+        "category_id": 2,
+        "user_ids": [
+            0,
+            1,
+            2
+        ],
+        "due_date": "01-01-2024",
+        "prio": 0,
+        "subtasks": [
+            {
+                "id": 0,
+                "title": "Lorem ipsum dolor",
+                "checked": true
+            },
+            {
+                "id": 1,
+                "title": "sit amet consectetur",
+                "checked": false
+            }
+        ]
     },
     {
-       "id":1,
-       "bucket":"window2",
-       "title":"Beispiel Task",
-       "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
-       "category_id":2,
-       "user_ids":[
-          0,
-          1,
-          2
-       ],
-       "due_date":"01-01-2024",
-       "prio":0,
-       "subtasks":[
-          {
-             "id":0,
-             "title":"Lorem ipsum dolor",
-             "checked":true
-          },
-          {
-             "id":1,
-             "title":"sit amet consectetur",
-             "checked":false
-          }
-       ]
+        "id": 1,
+        "bucket": "window2",
+        "title": "Beispiel Task",
+        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+        "category_id": 2,
+        "user_ids": [
+            0,
+            1,
+            2
+        ],
+        "due_date": "01-01-2024",
+        "prio": 0,
+        "subtasks": [
+            {
+                "id": 0,
+                "title": "Lorem ipsum dolor",
+                "checked": true
+            },
+            {
+                "id": 1,
+                "title": "sit amet consectetur",
+                "checked": false
+            }
+        ]
     },
     {
-       "id":2,
-       "bucket":"window3",
-       "title":"Beispiel Task",
-       "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
-       "category_id":2,
-       "user_ids":[
-          0,
-          1,
-          2
-       ],
-       "due_date":"01-01-2024",
-       "prio":0,
-       "subtasks":[
-          {
-             "id":0,
-             "title":"Lorem ipsum dolor",
-             "checked":true
-          },
-          {
-             "id":1,
-             "title":"sit amet consectetur",
-             "checked":false
-          }
-       ]
+        "id": 2,
+        "bucket": "window3",
+        "title": "Beispiel Task",
+        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+        "category_id": 2,
+        "user_ids": [
+            0,
+            1,
+            2
+        ],
+        "due_date": "01-01-2024",
+        "prio": 0,
+        "subtasks": [
+            {
+                "id": 0,
+                "title": "Lorem ipsum dolor",
+                "checked": true
+            },
+            {
+                "id": 1,
+                "title": "sit amet consectetur",
+                "checked": false
+            }
+        ]
     }
- ];
-
-
-// let todos = [{
-//     'topic': 'Design',
-//     'id': 0,
-//     'title': 'Website redesign',
-//     'description': 'Modify the contents of the main website...',
-//     'category': 'window1',
-//     'users': 'MB'
-// },
-// {
-//     'topic': 'Sales',
-//     'topic-color': '#FC71FF',
-//     'id': 1,
-//     'title': 'In progress',
-//     'description': 'Make the product presentation to prospective buyers',
-//     'category': 'window2'
-// },
-// {
-//     'topic': 'Backoffice',
-//     'id': 2,
-//     'title': 'Accounting invoices',
-//     'description': 'Make the product presentation to prospective buyers',
-//     'category': 'window3'
-// },
-// {
-//     'topic': 'Marketing',
-//     'id': 3,
-//     'title': 'Call potential clients',
-//     'description': 'Make the product presentation to prospective buyers',
-//     'category': 'window4'
-// },
-// {
-//     'topic': 'Media',
-//     'id': 4,
-//     'title': 'Video Cut',
-//     'description': 'Edit the new company',
-//     'category': 'window4'
-    
-// }
-
-// ];
+];
 
 let category = [
     {
@@ -471,8 +426,8 @@ let todos_suggested = [
         'category_id': 2,
         'user_ids': [0, 1, 2],
         'due_date': 123134346, // Unix timestamp
-        'prio' : 0,
-        'subtasks' : [
+        'prio': 0,
+        'subtasks': [
             {
                 'id': 0,
                 'title': 'Lorem ipsum dolor',
@@ -486,3 +441,5 @@ let todos_suggested = [
         ]
     }
 ];
+
+

@@ -8,19 +8,17 @@ function login() {
             activeUserId = users[i]['id'];
             setItemLocal('activeUserId', activeUserId);
             openSummary();
-        }   
+        }
     }
     if (!check) {
         document.getElementById('wrong_login').innerHTML = "incorrect login data";
-    } 
-
     }
 
+}
 
 function guestLogin() {
     activeUserId = -2;
     setItemLocal('activeUserId', activeUserId);
     openSummary();
 }
-    
-    
+
