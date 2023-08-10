@@ -1,0 +1,922 @@
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+.sign_up_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f6f7f8;
+  z-index: 1;
+}
+
+.start_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f6f7f8;
+  width: 100%;
+  z-index: 1;
+}
+
+.capa_sign_up {
+  position: fixed;
+  left: 77px;
+  top: 80px;
+  
+}
+
+.vector_5 {
+  margin-top: 10px;
+}
+
+.cont_sign_up {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 652px;
+  height: 559px;
+  background: white;
+  box-shadow: 0px 0px 14px 3px rgba(0, 0, 0, 0.04);
+  border-radius: 30px;
+  box-sizing: border-box;
+}
+
+.cont_log_in {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 39px;
+  gap: 40px;
+  width: 652px;
+  height: 513px;
+  background: white;
+  box-shadow: 0px 0px 14px 3px rgba(0, 0, 0, 0.04);
+  border-radius: 30px;
+  box-sizing: border-box;
+}
+
+.cont_forgot_pw {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 39px;
+  gap: 20px;
+  width: 826px;
+  height: 462px;
+  background: white;
+  box-shadow: 0px 0px 14px 3px rgba(0, 0, 0, 0.04);
+  border-radius: 30px;
+  box-sizing: border-box;
+}
+
+.cont_reset_pw {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 39px;
+  gap: 20px;
+  width: 826px;
+  height: 537px;
+  background: white;
+  box-shadow: 0px 0px 14px 3px rgba(0, 0, 0, 0.04);
+  border-radius: 30px;
+  box-sizing: border-box;
+}
+
+.sign_up_title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 315px;
+  height: 73px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 61px;
+  line-height: 120%;
+  text-align: center;
+  color: #000000;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.blue_arrow_back {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  position: relative;
+  top: 42px;
+  right: 274px;
+}
+
+.black_arrow_back {
+  display: none;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  position: relative;
+  top: 42px;
+  right: 274px;
+}
+
+.reset_blue_arrow_back {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  position: relative;
+  top: 35px;
+  right: 360px;
+}
+
+.reset_black_arrow_back {
+  display: none;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  position: relative;
+  top: 35px;
+  right: 360px;
+}
+
+.forgot_blue_arrow_back {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  position: relative;
+  top: 42px;
+  right: 374px;
+}
+
+.forgot_black_arrow_back {
+  display: none;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  position: relative;
+  top: 42px;
+  right: 374px;
+}
+
+.signup_head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+
+.login_header_right {
+  position: fixed;
+  right: 114px;
+  top: 67px;
+}
+
+.not_user {
+  font-size: 21px;
+  font-family: "Inter";
+}
+
+.input_sign_up {
+  display: flex;
+  align-items: center;
+  border: 1px solid #d1d1d1;
+  border-radius: 10px;
+  padding: 0 21px 0 21px;
+  margin-top: 20px;
+  height: 49px;
+  width: 320px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 49px;
+}
+
+.signup_button {
+  height: 51px;
+  width: 145px;
+  border-radius: 8px;
+  padding: 4px 0px 4px 0px;
+  background: #2a3647;
+  border-radius: 10px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 30%;
+  border: solid;
+  cursor: pointer;
+}
+
+
+.signup_button:hover,
+.login_button:hover,
+.signup_button_short:hover,
+.send_email_button:hover,
+.continue_button:hover {
+  border: none;
+  background-color: #29abe2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.125s ease;
+}
+
+.login_button {
+  height: 51px;
+  width: 145px;
+  border-radius: 8px;
+  background: #2a3647;
+  border: 0.8px #2a3647 solid;
+  border-radius: 10px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: solid;
+  cursor: pointer;
+}
+
+.guest_login_button {
+  height: 51px;
+  width: 145px;
+  left: 253.5px;
+  top: 473px;
+  border-radius: 8px;
+  
+  background: white;
+  border: 0.8px #2a3647 solid;
+  border-radius: 10px;
+  color: #2a3647;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.guest_login_button:hover {
+  cursor: pointer;
+  border: 0.5px solid #29abe2;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  color: #29abe2;
+}
+
+.signup_button_short {
+  height: 51px;
+  width: 120px;
+  border-radius: 8px;
+  padding: 4px 0px 4px 0px;
+  background: #2a3647;
+  border-radius: 10px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 35px;
+  border: 0px;
+  cursor: pointer;
+}
+
+.send_email_button,
+.continue_button {
+  height: 51px;
+  width: 264px;
+  left: 253.5px;
+  top: 473px;
+  border-radius: 8px;
+  padding: 4px 0px 4px 0px;
+  background: #2a3647;
+  border-radius: 10px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: solid;
+  border: 0px;
+  cursor: pointer;
+}
+
+.text_reset_pw {
+  font-size: 21px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+}
+
+.text_forgot_pw {
+  font-size: 21px;
+  font-weight: 400;
+  text-align: center;
+  width: 600px;
+  padding-top: 30px;
+}
+
+.infield_name {
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 21px;
+  
+  color: black;
+  background: url(img/icon_small_profile.svg);
+  background-repeat: no-repeat;
+  background-position-x: 380px;
+  padding-right: 45px;
+  background-size: 16px;
+  background-position-y: 12px;
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: #d1d1d1;
+  border-style: solid;
+  font-size: 21px;
+  width: 422px;
+  box-sizing: border-box;
+}
+
+.infield_email {
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 21px;
+  color: black;
+  background: url(img/icon_message.svg);
+  background-repeat: no-repeat;
+  background-position-x: 380px;
+  padding-right: 45px;
+  background-size: 16px;
+  background-position-y: 17px;
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: #d1d1d1;
+  border-style: solid;
+  font-size: 21px;
+  width: 422px;
+  box-sizing: border-box;
+}
+
+
+.infield_password {
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 21px;
+  padding-right: 21px;
+  color: black;
+  background: url(img/icon_lock.svg);
+  background-repeat: no-repeat;
+  background-position-x: 380px;
+  padding-right: 45px;
+  background-size: 16px;
+  background-position-y: 15px;
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: #d1d1d1;
+  border-style: solid;
+  font-size: 21px;
+  width: 422px;
+  box-sizing: border-box;
+}
+
+.wrong_message {
+  margin-top: 8px;
+  display: flex;
+  font-size: 12px;
+  color: #FF001F;
+}
+
+.d-none {
+  display: none;
+}
+
+.login_buttons {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.forgot {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-family: "Inter";
+  font-size: 16px;
+}
+
+.text-forgot-password {
+  color: #29abe2;
+  cursor: pointer;
+}
+
+.img_forgot_password {
+  width: 550px;
+}
+
+.send_message, .send_reset_message {
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 80px;
+  position: fixed;
+  display: flex;
+  left: 0;
+  right: 0;
+}
+
+
+.hide_message {
+  display: none;
+}
+
+.send_message_text {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  font-size: 21px;
+  padding: 0px 20px;
+  width: 424px;
+  height: 74px;
+  background: #2A3647;
+  box-shadow: 0px 0px 4px rgb(0 0 0 / 15%);
+  border-radius: 20px;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #F6F7F8;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.animation_background {
+  animation: bg-transparency 1000ms ease-in-out;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes bg-transparency {
+  from {
+    opacity: 1;
+    z-index: 0;
+  }
+
+  to {
+    opacity: 0;
+    z-index: 0;
+  }
+}
+
+.move_logo {
+  position: absolute;
+  z-index: 2;
+  left: calc(100vw - 50% - 101px);
+  top: calc(100vh - 50% - 122px);
+  width: 352px;
+  height: 394px;
+}
+
+.logo_animation {
+  animation: moveLogo 500ms ease-in-out;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes moveLogo {
+  from {
+    left: calc(100vw - 50% - 101px);
+    top: calc(100vh - 50% - 122px);
+    width: 352px;
+    height: 394px;
+  }
+
+  to {
+    left: 77px;
+    top: 80px;
+    width: 101px;
+    height: 122px;
+  }
+}
+
+.responsive_logo {
+  display: none;
+position: absolute;
+top: 42%;
+right: 42%;
+height: 86px;
+width: 82px;
+}
+
+.responsive_bg {
+  display: none;
+  background: #2a3647;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* responsive login-area */
+
+
+@media(max-width: 1080px) {
+  .capa_sign_up {
+      left: 120px;
+      top: 50px;
+      width: 65px;
+  }
+  .logo_signup {
+      width: 140px;
+  }
+  .cont_sign_up {
+      height: 520px;
+    }
+    .cont_forgot_pw, .cont_reset_pw {
+      width: 700px;
+    }
+    .forgot_blue_arrow_back {
+      top: 30px;
+      right:310px;
+      width: 20px;
+    }
+
+    .reset_blue_arrow_back {
+      top: 5px;
+      right: 290px;
+    }
+
+    .img_forgot_password {
+      width: 540px;
+    }
+    .text_forgot_pw {
+      
+      width: 580px;
+      
+  }
+}
+
+@media(max-width: 870px){
+.cont_forgot_pw, .cont_reset_pw {
+  width: 600px;
+}
+.img_forgot_password {
+  width: 480px;
+}
+.forgot_blue_arrow_back, .reset_blue_arrow_back {
+  top: 10px;
+  right: 265px;
+}
+}
+
+@media(max-width: 800px){
+  .not_user {
+      font-size: 18px;
+  }
+  .signup_button_short {
+      height: 45px;
+  }
+  .cont_sign_up {
+      width: 600px;
+    }
+    .blue_arrow_back {
+      right: 250px;
+    }
+    .vector_5 {
+      width: 100px;
+      margin-top: 8px;
+  }
+}
+
+
+@media(max-width: 750px) {
+  .cont_log_in {
+      width: 600px;
+    }
+    .blue_arrow_back {
+      right: 200px;
+      width: 20px;
+    }
+}
+
+
+@media(max-width: 700px) {
+  .cont_log_in {
+      width: 560px;
+    }
+    .cont_forgot_pw, .cont_reset_pw {
+      width: 540px;
+    }
+  .forgot_blue_arrow_back, .reset_blue_arrow_back {
+      right: 245px;
+      width: 20px;
+  }
+}
+
+@media(max-width: 650px) {
+  .cont_log_in, .cont_sign_up {
+      width: 520px;
+    }
+    .login_header_right {
+      right: 80px;
+    }
+}
+
+
+@media(max-width: 610px) {
+  .not_user {
+      font-size: 14px;
+  }
+  .signup_button_short {
+      height: 40px;
+  }
+  .capa_sign_up {
+      left: 90px;
+      top: 50px;
+      width: 60px;
+  }
+  .cont_log_in {
+      width: 420px;
+    }
+}
+
+@media(max-width: 580px){
+  .cont_log_in {
+      width: 480px;
+    }
+    .login_header_right {
+      right: 70px;
+      top: 80px;
+    }
+    .infield_email, .infield_password, .infield_name {
+      background-position-x: 340px;
+      background-position-y: 17px;
+      width: 380px;
+
+    }
+    .signup_button_short {
+      margin-left: 20px;
+    }
+}
+
+@media(max-width: 535px) {
+  .signup_button_short {
+      margin-left: 10px;
+    }
+   
+}
+@media(max-width: 520px){
+  .cont_log_in, .cont_sign_up {
+      width: 480px;
+    }
+    .cont_forgot_pw, .cont_reset_pw {
+      width: 480px;
+    }
+    .img_forgot_password {
+      width: 340px;
+    }
+    
+    .text_forgot_pw {
+      width: 420px;
+    }
+    .forgot_blue_arrow_back, .reset_blue_arrow_back {
+      top: 20px;
+      right: 210px;
+    }
+  
+  }
+
+@media(max-width: 510px){
+  .forgot_blue_arrow_back  {
+      top: 5px;
+      right:195px;
+    }
+      
+    .login_header_right {
+      width: 100%;
+      top:720px;
+      left: 20%;
+      padding-bottom: 20px;
+      font-size: 21px;
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      z-index: 0;
+    }
+    .signup_button_short {
+      margin-left: 0px;
+    }
+    
+    .text_forgot_pw {
+      width: 380px;
+    }
+  
+  }
+  @media(max-width: 500px){
+
+    .cont_forgot_pw, .cont_reset_pw {
+      width: 420px;
+    }
+    .img_forgot_password {
+      width: 300px;
+    }
+    
+    .text_forgot_pw {
+      width: 360px;
+    }
+    
+    .forgot_blue_arrow_back, .reset_blue_arrow_back {
+      top: 5px;
+      right: 170px;
+    }
+    
+    
+  }
+
+        
+@media(max-width: 465px){
+  .infield_email, .infield_password, .infield_name {
+      background-position-x: 300px;
+      background-position-y: 17px;
+      width: 340px;
+      }
+      .cont_log_in, .cont_sign_up {
+          width: 440px;
+        }
+        .send_message_text {
+          width: 360px;
+}
+}
+
+@media(max-width: 450px) {
+
+  .cont_log_in, .cont_sign_up {
+      position: absolute;
+      top: 150px;
+      width: 372px;
+    }
+    .capa_sign_up {
+      left: 30px;
+      top: 30px;
+      width: 55px;
+  }
+
+  .logo_signup {
+      width: 130px;
+  }
+
+  .vector_5 {
+      width: 100px;
+      margin-top: 5px;
+  }
+
+    .black_arrow_back {
+      display: inline;
+      width: 18px;
+      right: 140px;
+    }
+
+    .blue_arrow_back {
+      display: none;
+    }
+
+  .reset_black_arrow_back, .forgot_black_arrow_back {
+      display: inline;
+      top: 5px;
+      right: 160px;
+      width: 15px;
+    }
+    .reset_blue_arrow_back, .forgot_blue_arrow_back {
+      display: none;
+    }
+
+    .infield_email, .infield_password, .infield_name {
+      background-position-x: 260px;
+      background-position-y: 17px;
+      width: 300px;
+    }
+
+    .cont_forgot_pw, .cont_reset_pw {
+      width: 390px;
+    }
+
+    .animation_background, .background, .move_logo, .logo_animation {
+      display: none;
+    }
+
+    .responsive_logo, .responsive_bg {
+      display: inline;
+      z-index: 2;
+    }
+
+    
+}
+
+
+@media(max-width: 430px) {
+  .login_header_right {
+  left: 15%;
+  gap: 30px;
+  }
+  .cont_forgot_pw, .cont_reset_pw {
+      width: 360px;
+    }
+    .forgot_black_arrow_back  {
+      top: 5px;
+      right: 150px;
+    }
+    .text_forgot_pw, .text_reset_pw {
+      width: 325px;
+    }
+}
+
+@media(max-width: 395px) {
+
+  .cont_log_in, .cont_sign_up {
+      position: absolute;
+      top: 150px;
+      width: 320px;
+    }
+    .text_forgot_pw, .text_reset_pw {
+      font-size: 16px;
+    }
+
+    .cont_forgot_pw, .cont_reset_pw {
+      width: 310px;
+    }
+    .forgot_black_arrow_back  {
+      top: 1px;
+      right:140px;
+    }
+
+    .reset_black_arrow_back {
+      right: 135px;
+      width: 15px;
+    }
+    .text_forgot_pw {
+      width: 310px;
+    }
+    }
+  
+
+  @media(max-width: 380px) {
+      .login_header_right {
+          left: 14%;
+          gap: 25px;
+          }
+
+      .cont_log_in, .cont_sign_up {
+          position: absolute;
+          top: 150px;
+          width: 320px;
+        }
+        .cont_forgot_pw, .cont_reset_pw {
+          width: 290px;
+        }
+        .forgot_black_arrow_back  {
+          top: 1px;
+          right:110px;
+        }
+        .text_forgot_pw {
+          width: 270px;
+        }
+        .img_forgot_password {
+          width: 270px;
+        }
+        .infield_email, .infield_password, .infield_name {
+          width: 270px;
+          font-size: 16px;
+          background-position-x: 235px;
+          background-position-y: 16px;
+        }
+        .send_message_text {
+          width: 300px;
+}
+      }
+
+      @media(max-width: 350px){
+          .cont_forgot_pw, .cont_reset_pw {
+              width: 270px;
+            }
+            .forgot_black_arrow_back  {
+              top: 1px;
+              
+            }
+            .text_forgot_pw {
+              width: 250px;
+            }
+            .img_forgot_password {
+              width: 250px;
+            }
+            .infield_email, .infield_password, .infield_name {
+              background-position-x: 220px;
+              background-position-y: 17px;
+              width: 255px;
+            }
+            .send_email_button {
+              width: 245px;
+            }
+          }
+      
+
+/*responsive login-area end*/

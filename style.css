@@ -1,0 +1,329 @@
+@font-face {
+    font-family: 'Inter';
+    src: url(fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+body {
+    font-family: 'Inter';
+    margin: 0;
+}
+
+.contact_design {
+    background-color: #2A3647;
+    color: white;
+    width: 453px;
+    height: 594px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    font-size: 27px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.add_contact {
+    display: flex;
+    justify-content: center;
+    height: 594px;
+    width: 1212px;
+}
+
+.small_logo {
+    padding-left: 46px;
+    margin-top: -65px;
+}
+
+.slogan_add_contact {
+    height: 73px;
+    font-size: 60px;
+    font-family: 'Inter';
+    font-weight: 700;
+    padding-left: 46px;
+}
+
+.design_line {
+    border: 2px solid #29ABE2;
+    width: 90px;
+    margin-top: 6px;
+    margin-left: 46px;
+
+}
+
+.description_contact {
+    padding-left: 46px;
+}
+
+.contact_input {
+    background: #FFFFFF;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    display: flex;
+    font-family: 'Inter';
+    width: 759px;
+    height: 594px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact_second_side {
+    display: flex;
+    flex-direction: column;
+}
+
+.avatar {
+    display: flex;
+    width: 120px;
+    height: 120px;
+    font-size: 47px;
+}
+
+.avatar_add {
+    display: flex;
+    width: 120px;
+    height: 120px;
+    background-image: url(img/icon_profile.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+.form_contact {
+    display: flex;
+    flex-direction: column;
+    width: 422px;
+    gap: 49px;
+    padding-top: 79px;
+    padding-bottom: 55px;
+    padding-right: 63px;
+}
+
+.form_buttons {
+    display: flex;
+    margin-top: 55px;
+    justify-content: flex-end;
+}
+
+.close {
+    background-image: url(img/edit_close.svg);
+    background-position: center;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 19px;
+    position: relative;
+    top: 34px;
+    right: 63px;
+    cursor: pointer;
+}
+
+.input_name {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 21px;
+    color: black;
+    background: url(img/icon_small_profile.svg);
+    background-repeat: no-repeat;
+    background-position-x: 290px;
+    padding-right: 45px;
+    background-size: 16px;
+    background-position-y: 12px;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: #D1D1D1;
+    border-style: solid;
+    font-size: 21px;
+    box-sizing: border-box;
+}
+
+.input_email {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 21px;
+    color: black;
+    background: url(img/icon_message.svg);
+    background-repeat: no-repeat;
+    background-position-x: 290px;
+    padding-right: 45px;
+    background-size: 16px;
+    background-position-y: 17px;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: #D1D1D1;
+    border-style: solid;
+    font-size: 21px;
+    box-sizing: border-box;
+}
+
+.input_phone {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 21px;
+    padding-right: 21px;
+    color: black;
+    background: url(img/icon_small_phone.svg);
+    background-repeat: no-repeat;
+    background-position-x: 290px;
+    padding-right: 45px;
+    background-size: 16px;
+    background-position-y: 15px;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: #D1D1D1;
+    border-style: solid;
+    font-size: 21px;
+    box-sizing: border-box;
+}
+
+.input_phone::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+.cancel {
+    padding: 15px;
+    border-radius: 10px;
+    height: 55px;
+    font-size: 21px;
+    color: #2A3647;
+    background: url(img/cancel_cross.svg);
+    background-repeat: no-repeat;
+    font-family: 'Inter';
+    background-position: right;
+    margin-right: 30px;
+    border-width: 1px;
+    background-position-x: 100px;
+    padding-right: 45px;
+    border-style: solid;
+    cursor: pointer;
+}
+
+.delete {
+    padding: 15px;
+    border-radius: 10px;
+    height: 55px;
+    font-size: 21px;
+    color: #2A3647;
+    font-family: 'Inter';
+    margin-right: 30px;
+    border: 1px solid #2A3647;
+    cursor: pointer;
+}
+
+.save {
+    width: 153px;
+    height: 55px;
+    border-radius: 10px;
+    font-size: 21px;
+    font-weight: 700;
+    font-family: 'Inter';
+    color: white;
+    background-color: #2A3647;
+    border: 1px;
+    cursor: pointer;
+}
+
+.submit {
+    width: 218px;
+    height: 55px;
+    border-radius: 10px;
+    font-size: 21px;
+    font-weight: 700;
+    font-family: 'Inter';
+    background: url(img/create_contact_icon.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+    color: white;
+    background-color: #2A3647;
+    border: 1px;
+    background-position-x: 180px;
+    padding-right: 45px;
+    cursor: pointer;
+}
+
+.close-cross {
+    display: flex;
+    justify-content: right;
+}
+
+.header_text {
+    font-size: 21px;
+    margin-left: 116px;
+    margin-top: 32px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    z-index: 1;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.header_profile_img {
+    height: 46px;
+    width: 46px;
+    border-radius: 62%;
+    border: solid;
+    border-color: white;
+    margin-left: 22px;
+    margin-right: 36px;
+    outline: solid;
+    outline-color: #2A3647;
+
+
+}
+
+.question_and_avatar {
+    display: flex;
+    align-items: center;
+}
+
+.header_profile_img {
+    cursor: pointer;
+}
+
+.header_question {
+    cursor: pointer;
+}
+.sidebar_legal_notice_img {
+    cursor: pointer;
+
+}
+
+.summary_todo_done {
+    cursor: pointer;
+}
+
+.todo_done_part {
+    cursor: pointer;
+}
+
+.hide_mobile_info {
+    cursor: pointer;
+}
+
+.log_out_menu {
+    cursor: pointer;
+}
+
+.open_help_menu {
+    cursor: pointer;
+
+}
+
+
+#add_task {
+    cursor: pointer;
+
+}
+
+.plus {
+    cursor: pointer;
+
+}
+
+.footer_buttons {
+    cursor: pointer;
+}
